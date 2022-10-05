@@ -1,0 +1,21 @@
+.flex{display: flex;}
+
+.widthFull{width: 100%;}
+.widthHalf{width: 50%;}
+
+.align{align-items: center;}
+
+.justifyCenter{justify-content: center;}
+.justifyBet{justify-content: space-between;}
+
+.column{flex-direction: column;}
+
+.wrap{flex-wrap: wrap;}
+
+.gap4{gap: 4px;}
+.gap8{gap: 8px;}
+.gap16{gap: 16px;}
+.gap24{gap: 24px;}
+.gap32{gap: 32px;}
+.gap64{gap: 64px;}
+

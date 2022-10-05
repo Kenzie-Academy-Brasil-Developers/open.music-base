@@ -18,6 +18,9 @@
   --color-grey-7: #f1f3f5;
   --color-grey-8: #f8f9fa;
   --color-grey-9: #fdfeff;
+  --color-black: #000000;
+  
+  --text-color-black: #000000;
 
   --color-disable-fixed: #212529;
   --color-actived-fixed: #2b2f33;
@@ -30,14 +33,28 @@
   --radius-1: 0.25rem;
   --container: 45rem;
 }
-
+.dark-mode:root{
+  --color-grey-9:#15171a;
+  --color-grey-8:#212529;
+  --color-grey-7:#2b2f33;
+  --color-grey-6: #212529;
+  --text-color-black: #ffffff
+}
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey-9);
-}
+  color: var(--text-color-black);
 
+}
+body li{
+  list-style: none;
+}
+body button{
+  cursor: pointer;
+  color: var(--text-color-black);
+}
 .container {
   width: var(--container);
   max-width: 100%;

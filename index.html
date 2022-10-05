@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/coisasUsuais.css">
+    <link rel="stylesheet" href="./styles/barrinhaRange.css">
+    <link rel="stylesheet" href="./styles/darkMode.css">
+    <title>Open Music</title>
+  </head>
+  <body>
+    <main class="container flex column gap32">
+      <nav class="nav flex align justifyBet">
+        <h1>open music</h1>
+        <button id="dmButton" class="dmButton"><img id="dmIcon" src="./assets/img/moon.svg" alt=""></button>
+      </nav>
+      <div class="estilos flex column gap32">
+        <h3>Gênero Musical</h3>
+        <section class="secButtons flex gap24 wrap">
+          <button class="butEstilos flex align justifyCenter">Todos</button>
+          <button class="butEstilos flex align justifyCenter">Pop</button>
+          <button class="butEstilos flex align justifyCenter">MPB</button>
+          <button class="butEstilos flex align justifyCenter">Forró</button>
+          <button class="butEstilos flex align justifyCenter">Samba</button>
+          <button class="butEstilos flex align justifyCenter">Baião</button>
+          <button class="butEstilos flex align justifyCenter">Rap</button>
+          <button class="butEstilos flex align justifyCenter">Hip-Hop</button>
+          <button class="butEstilos flex align justifyCenter">Rock</button>
+          <button class="butEstilos flex align justifyCenter">Reggae</button>
+          <button class="butEstilos flex align justifyCenter">Country</button>
+          <button class="butEstilos flex align justifyCenter">Gospel</button>
+        </section>
+      </div>
+      <div class="flex column gap24">
+        <section class="secPreco flex align justifyBet">
+          <h3>Definir preço</h3>
+          <h4>Até R$ <span id="valorOutput">240,00</span></h4>
+        </section>
+        <input type="range" min="0" max="240" id="valorInput" class="range">
+      </div>
+      <div class="divCards flex column gap64">
+        <h3>Albums Encontrados</h3>
+        <ul class="ulCards flex wrap widthFull gap64" id="ulMainCards">
+          
+        </ul>
+      </div>
+    </main>
+    <script src="./pages/home/productsData.js"></script>
+    <script src="./pages/home/index.js"></script>
+    <script src="./scripts/theme.js"></script>
+  </body>
+</html>
